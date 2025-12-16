@@ -1,0 +1,144 @@
+#!/usr/bin/env python
+
+
+import mtrf
+import pickle
+import mne
+import numpy as np
+import scipy.stats as stats
+import pandas as pd
+
+import os
+import multiprocessing
+import sys 
+import itertools
+import random
+
+
+subnum=sys.argv[1]
+subnum = int(subnum)
+feat_shuffle=sys.argv[2]
+
+
+from trf_functions import predict_time_constrained_trial
+from trf_cv_functions import *
+# +
+subjects = ['sub05','sub06', 'sub07', 'sub08','sub09','sub10','sub11','sub12','sub13','sub14','sub15','sub16',
+'sub18','sub19','sub20','sub21','sub22','sub23', 'sub25', 'sub26', 'sub27', 'sub28', 'sub29', 'sub30', 
+'sub31', 'sub32', 'sub33', 'sub34', 'sub35', 'sub36', 'sub37', 'sub38', 'sub39', 'sub40', 'sub41', 'sub42', 'sub43', 
+'sub44', 'sub45', 'sub46', 'sub47', 'sub48', 'sub49', 'sub50', 'sub51', 'sub52', 'sub53', 'sub54', 'sub55', 'sub56', 
+'sub57', 'sub58', 'sub59', 'sub60', 'sub61', 'sub62', 'sub63', 
+'sub64', 'sub65', 'sub66', 'sub67', 'sub68', 'sub69', 'sub70', 'sub72']
+
+sub = subjects[subnum]
+
+
+from mtrf.model import TRF, load_sample_data
+from mtrf.stats import pearsonr, neg_mse
+import copy
+
+featn = "ling"
+
+tmin = -0.1
+tmax = 0.8
+
+
+##Feature indexes
+feats_dict = {"ling_word_target":[0,2,8],"ling_word_dis":[1,3,9], "ling_phone_target":[4,6], "ling_phone_dis":[5,7], "ling_target":[0,2,4,6], "word_surprisal_dis":1, "ws_target":[0], "we_target":[8], "ws_dis":[1], "we_dis":[9]}
+
+feat_index = feats_dict[feat_shuffle]
+
+
+print("TRF analysis starts now", flush=True)
+
+seedlist = range(0,50)
+
+for ise, seed in enumerate(seedlist):
+    random.seed(seed)
+    num_it = seed
+
+    ##Load features and eeg response
+    path_in = "../trf_input/{s}/{f}_{s}_nb_resid_within_withent_ws.pickle".format(s =sub, f = featn)
+    with open(path_in, "rb") as input_file:
+        feat_sub = pickle.load(input_file)
+
+
+    ###Load residualized eeg
+
+
+    path_in = "../trf_results/within/pred_resid/resp_resid_acoustic_8020_speaker_{s}.pickle".format(s =sub)
+    with open(path_in, "rb") as input_file:
+        resp_sub = pickle.load(input_file)
+
+
+
+
+    resp_concat = np.concatenate(resp_sub)
+
+    # Calculate mean and standard deviation
+    m_resp = np.mean(resp_concat, axis = 0)
+    std_resp = np.std(resp_concat, axis = 0)
+
+    resp_stan = []
+    for i,ar in enumerate(resp_sub):
+        
+        s = (ar-m_resp)/std_resp
+        resp_stan.append(np.array(s))
+
+
+    ##Cut to target length
+    for i in range(len(resp_stan)):
+        lent = len(resp_stan[i])
+        feat_sub[i] = feat_sub[i][64:lent+64,]
+
+
+
+ 
+ 
+    trialnums = range(len(feat_sub))
+
+    [trf_fits,pred, mod_weights, testtrials, fits_sub_tr] = shuffle_data_ling(num_it, feat_sub, resp_stan, feat_index, sub, feat_shuffle, tr = True)
+
+    #Summarize the fits
+    trf_fits = trf_fits.groupby(['subject', 'trialnum', 'channel', 'feature_shuffle', 'window', 'feature'], as_index = False).mean('fit')
+
+    trf_fits_tr = fits_sub_tr.groupby(['subject', 'trialnum', 'channel', 'feature_shuffle', 'window'], as_index = False).mean('fit')
+
+    mean_predt = []
+    ##Summarize the predictions for saving
+    for tt in trialnums:
+        indices = [i for i, x in enumerate(testtrials) if x == tt]
+
+        pred_trial = [pred[i] for i in indices]
+
+        mean_pred = np.mean(pred_trial, axis = 0)
+
+        mean_predt.append(mean_pred)
+
+
+
+    mod = "linguistic"
+    newpath = "../trf_results/" + sub + "/" +"shuffle" + "/"
+
+    if not os.path.exists(newpath):
+        os.makedirs(newpath)
+
+    name_fits = "fits_{m}_{s}_{i}_{f}_within_nb_stan.csv".format(m = mod, s = sub, i = num_it, f = feat_shuffle)
+    save_path = newpath + name_fits
+    trf_fits_tr.to_csv(save_path)
+
+    name_fits = "fits_{m}_{s}_{i}_{f}_within_nb_stan_notr.csv".format(m = mod, s = sub, i = num_it, f = feat_shuffle)
+    save_path = newpath + name_fits
+    trf_fits.to_csv(save_path)
+
+
+    trfs_name = "trfs_{m}_{s}_{i}_{f}_within_nb_stan.pickle".format(m = mod, s= sub, i = num_it, f = feat_shuffle)
+    trfp = newpath + trfs_name
+    with open(trfp, "wb") as output_file:
+        pickle.dump(mod_weights, output_file)
+
+
+    resp_name = "prediction_{m}_{s}_{i}_{f}_within_nb_stan.pickle".format(m = mod, s=sub, i = num_it, f = feat_shuffle)
+    trfp = newpath + resp_name
+    with open(trfp, "wb") as output_file:
+        pickle.dump(mean_predt, output_file)

@@ -1,0 +1,241 @@
+target;distractor;id;id_dis;source_target;target_sent;source_dis;distractor_sent
+059.wav;dis_205.wav;59;dis_205;corpus;Frische Gardinen hängen am Fenster.;GPT-normal;Ein Lächeln erhellte das Gesicht des müden Reisenden.
+030.wav;dis_136.wav;30;dis_136;GPT-high;Der Regen tropft vom Dach.;GPT-high;Die Lampe erhellte den Raum mit warmem Licht.
+044.wav;dis_180.wav;44;dis_180;corpus;Montag war es uns zu regnerisch.;GPT-literature;Auf dem Jahrmarkt fand sie das Ticket ins Abenteuer.
+017.wav;dis_066.wav;17;dis_066;GPT-daily;Der Bus hupt vor der belebten Haltestelle.;GPT-low;Mit Samthandschuhen betrachtet der Künstler sein unvollendetes Meisterwerk.
+257.wav;dis_259.wav;257;dis_259;GPT-sie;Sie trägt ein Lächeln im Gesicht.;GPT-news;Die Polizei ermittelt nach einem Überfall in der Innenstadt.
+027.wav;dis_126.wav;27;dis_126;GPT-high;Kinder spielen fröhlich im Park.;GPT-high;Die Katze schnurrte zufrieden auf dem warmen Sofa.
+209.wav;dis_038.wav;209;dis_038;GPT-unprompted;Ein Schiff gleitet über das Wasser.;GPT-unprompted;Der Abenteurer erklimmt den steilen Gipfel des Berges.
+260.wav;dis_266.wav;260;dis_266;GPT-sie;Sie läuft entspannt am Strand entlang.;GPT-news;Ein neues Gesetz verbietet die Nutzung von Plastiktüten.
+069.wav;dis_091.wav;69;dis_091;corpus;Die Rinder sind noch auf der Weide.;GPT-high;Das knisternde Feuer wärmt die kalten Hände.
+207.wav;dis_121.wav;207;dis_121;GPT-unprompted;Die Vögel umkreisten den Turm.;GPT-low;Mit leuchtenden Augen lauschte sie dem duftenden Geheimnis.
+051.wav;dis_010.wav;51;dis_010;corpus;Die Ärzte sind damit gar nicht einverstanden.;corpus;Die Bejahung dieser Frage ist meine Bedingung für einen Neuanfang.
+060.wav;dis_004.wav;60;dis_004;corpus;Auf dem Brett leuchten bunte Tulpen.;corpus;In den nächsten Jahren werde ich kein Pökelfleisch mehr essen.
+150.wav;dis_069.wav;150;dis_069;corpus;Opa jammert ständig über seine Asthmaanfälle.;GPT-low;Auf dem Parkett tanzt die Schattenfigur ihre einsamen Schritte.
+023.wav;dis_216.wav;23;dis_216;GPT-daily;Das Telefon klingelt in der stillen Wohnung.;GPT-normal;Ein Glitzern enthüllt sich im verborgenen Schmuckkästchen.
+128.wav;dis_160.wav;128;dis_160;corpus;Du hilfst mir beim Fernstudium.;GPT-normal;Am Morgen duftet frischer Kaffee in der Küche.
+068.wav;dis_139.wav;68;dis_139;corpus;Draußen fliegt die Landschaft vorbei.;GPT-high;Der Arzt verschrieb Medikamente gegen die Erkältung.
+025.wav;dis_135.wav;25;dis_135;GPT-high;Die Blumen blühen im Garten.;GPT-high;In der Bibliothek las sie ein fesselndes Buch.
+253.wav;dis_148.wav;253;dis_148;GPT-unprompted;Die Radfahrer erkunden den Wald.;GPT-low;Die Schnecke gewann einen Sprintwettkampf gegen den Hasen.
+007.wav;dis_062.wav;7;dis_062;GPT-low;Unruhig tanzen Blätter im Sonnenschein.;GPT-unprompted;Ein charmantes Lächeln erhellt das Gesicht des freundlichen Nachbarn.
+119.wav;dis_232.wav;119;dis_232;corpus;Durch den ständigen Föhn verdorren die Ähren.;GPT-low;Der Straßenverkäufer bot mir eine magische Teemischung an.
+118.wav;dis_018.wav;118;dis_018;corpus;Bei dem Peitschenknall scheuten die Rösser.;corpus;Vor Erschöpftheit warten wir das Ende des Kampfs nicht ab.
+130.wav;dis_055.wav;130;dis_055;corpus;Einstweilen ist Erfolg die Hauptsache.;GPT-unprompted;Die bunte Blumenpracht verschönert den heimischen Garten.
+055.wav;dis_247.wav;55;dis_247;corpus;Durch Wald und Feld führt unser Weg.;GPT-creative;Ein verirrter Luftballon trägt Botschaften über die Dächer.
+251.wav;dis_142.wav;251;dis_142;GPT-unprompted;Der Regen klopft ans Fenster.;GPT-high;Die Kellnerin empfahl das Tagesgericht des Restaurants.
+182.wav;dis_076.wav;182;dis_076;GPT-middle;Der Regenschirm schützt vor plötzlichem Regen.;GPT-low;Im Schatten der Vergangenheit ruht das Geheimnis des Alten.
+092.wav;dis_020.wav;92;dis_020;corpus;Motoren brauchen Benzin, Öl und Wasser.;corpus;Im Hauptquartier rüsten sich die Bergsteiger zur Erstbesteigung des Berges.
+003.wav;dis_077.wav;3;dis_077;GPT-low;Die Blumen blühen im Winter blau.;GPT-low;Ein Sonnenstrahl berührt zart das antike Buchregal.
+198.wav;dis_094.wav;198;dis_094;GPT-unprompted;Der Arzt untersucht den Patienten.;GPT-high;Das laute Gewitter verängstigt die kleinen Kinder.
+252.wav;dis_178.wav;252;dis_178;GPT-unprompted;Der Lehrer erklärt schwierige Konzepte.;GPT-literature;Der Krieger kämpfte tapfer gegen die Schatten der Vergangenheit.
+241.wav;dis_218.wav;241;dis_218;GPT-humans;Der Nachbar trägt immer Hüte.;GPT-normal;Ich lese gerne Bücher in meiner Freizeit.
+225.wav;dis_198.wav;225;dis_198;GPT-humans;Junge Erwachsene genießen das Stadtfest.;GPT-literature;Das Tagebuch erzählte von vergangener Liebe und Verlust.
+089.wav;dis_106.wav;89;dis_106;corpus;Sechs Mädchen wollen Schwester werden.;GPT-high;Der Roboter malt Porträts auf dem Bürgersteig.
+249.wav;dis_064.wav;249;dis_064;GPT-humans;Die Krankenschwester jongliert mit Medikamenten.;GPT-unprompted;Die kulinarische Vielfalt des Restaurants begeistert die Gäste.
+053.wav;dis_102.wav;53;dis_102;corpus;Die Kartoffeln gehören zum Mittagessen;GPT-high;Der Jongleur fischt nach Sternen im Zirkuszelt.
+020.wav;dis_068.wav;20;dis_068;GPT-daily;Der Regen prasselt auf das Dachfenster.;GPT-low;In der Nebelsuppe verschwinden die Konturen des Berges.
+001.wav;dis_174.wav;1;dis_174;GPT-low;Morgen wird es neblig und eiskalt.;GPT-literature;Der einsame Leuchtturm markierte das Ende ihrer Reise.
+164.wav;dis_075.wav;164;dis_075;GPT-low;Der Regen spielt Klavier auf den Dächern.;GPT-low;Die Silhouette des Wanderers verschmilzt mit dem Abenddunkel.
+057.wav;dis_192.wav;57;dis_192;corpus;Die Tante bewohnt ein nettes Häuschen;GPT-literature;Die Worte des Zauberers erweckten die vergessene Magie.
+052.wav;dis_028.wav;52;dis_028;corpus;Wir wollen heute spazieren gehen.;GPT-unprompted;In der Bibliothek lese ich gern spannende Romane.
+126.wav;dis_149.wav;126;dis_149;corpus;Die Entscheidung darfst du selbst fällen.;GPT-low;Im Supermarkt sang der Obstverkäufer fröhlich Kinderlieder.
+223.wav;dis_230.wav;223;dis_230;GPT-humans;Die Straßen sind voller fröhlicher Passanten.;GPT-low;Auf dem Markt traf ich einen Wahrsager mit sprechendem Papagei.
+120.wav;dis_003.wav;120;dis_003;corpus;Sie hat die Neuigkeit mit Genugtuung aufgenommen.;corpus;Bitte, wiederholen Sie die Telephonnummer, die Sie erfragt haben.
+113.wav;dis_254.wav;113;dis_254;corpus;Er hat eine sprunghafte Gangart.;GPT-creative;Ein Lächeln versteckt sich in den Blüten des Stadtparks.
+015.wav;dis_163.wav;15;dis_163;GPT-low;Der alte Baum erzählte vom Leben.;GPT-news;Die Regierung plant neue Maßnahmen zur Klimaverbesserung.
+157.wav;dis_047.wav;157;dis_047;GPT-low;Sein Blick streifte die Sterne.;GPT-unprompted;Der ruhige Fluss schlängelt sich durch die grüne Landschaft.
+142.wav;dis_107.wav;142;dis_107;corpus;Bei Konkurs kennt der Richter keine Gnade.;GPT-high;Die Wolke jongliert mit Regenschirmen auf dem Berggipfel.
+240.wav;dis_037.wav;240;dis_037;GPT-humans;Die Musiker unterhalten Passanten mit ihrer Musik.;GPT-unprompted;In der Pizzeria genießen wir köstliche Spezialitäten aus Italien.
+086.wav;dis_150.wav;86;dis_150;corpus;Heute jeder Strauß Blumen zwei Mark.;GPT-low;Der Gärtner entdeckte tanzende Blumen im Sonnenuntergang.
+135.wav;dis_226.wav;135;dis_226;corpus;Das amtliche Amtsblatt liegt überm Durchschnitt.;GPT-low;Meine Nachbarn überraschten mich mit selbstgemachten Marmeladen.
+082.wav;dis_120.wav;82;dis_120;corpus;Diese Durchsage ist ohne Gewähr.;GPT-low;Ein leises Wispern dringt aus dem alten Bücherregal.
+224.wav;dis_014.wav;224;dis_014;GPT-humans;Ein Musiker verzaubert die Menschenmenge.;corpus;Der fünfzehige Fuß kommt in der Tierwelt häufig vor.
+188.wav;dis_257.wav;188;dis_257;GPT-middle;Die Blumen blühen bunt im Blumenkasten.;GPT-creative;Ein geheimnisvoller Klang erklingt aus dem verlassenen Gebäude.
+075.wav;dis_206.wav;75;dis_206;corpus;In der Dämmerung kommen wir heim.;GPT-normal;Das Rätsel löste sich mit einem einfachen Schlüssel.
+151.wav;dis_264.wav;151;dis_264;corpus;Er wird ihr ewig treu bleiben.;GPT-news;Ein neues Gesetz zum Datenschutz tritt in Kraft.
+043.wav;dis_238.wav;43;dis_238;corpus;Über die Felder weht ein Wind;GPT-low;Das Café serviert Kaffee mit einem Hauch von Zimt.
+072.wav;dis_008.wav;72;dis_008;corpus;Hier richten Zimmerleute ein Dach.;corpus;Er ist zwar kein Genie, aber doch ein fähiger Ingenieur.
+117.wav;dis_281.wav;117;dis_281;corpus;Ein Stückchen weiter nördlich ist eine Umgehungsstraße.;GPT-nonfiction;Künstliche Intelligenz revolutioniert die Art und Weise, wie wir denken.
+165.wav;dis_090.wav;165;dis_090;GPT-low;In ihrem Blick lag eine tiefe Sehnsucht.;GPT-low;Das Echo seiner Worte hallte im leeren Konzertsaal wider.
+065.wav;dis_176.wav;65;dis_176;corpus;Wir haben ein Abteil extra für uns.;GPT-literature;Der Detektiv folgte der Spur bis zum geheimen Versteck.
+148.wav;dis_083.wav;148;dis_083;corpus;Schnaps im Tee verfälscht das Aroma.;GPT-low;Im Café plätschert leise der Gesprächsstrom der Gäste.
+004.wav;dis_070.wav;4;dis_070;GPT-low;Das kalte Licht leuchtet am Morgen.;GPT-low;Hinter den Augen verbirgt sich die Magie des Unsichtbaren.
+037.wav;dis_009.wav;37;dis_009;GPT-low;Ihr Lachen hallte durch den leeren Park.;corpus;Sie schießen spöttische Blicke auf den armen Spanier.
+121.wav;dis_231.wav;121;dis_231;corpus;Nach der harten Arbeit brauche ich Zerstreuung.;GPT-low;Während des Picknicks im Park entdeckten wir eine geheime Höhle.
+112.wav;dis_082.wav;112;dis_082;corpus;In den Bergen kann man Ski laufen.;GPT-low;Auf dem Markt verführt der Duft von frischem Brot.
+156.wav;dis_032.wav;156;dis_032;GPT-low;Am Himmel fliegt ein Schwarm Zugvögel vorbei.;GPT-unprompted;Das majestätische Schloss thront auf dem Hügel über der Stadt.
+140.wav;dis_013.wav;140;dis_013;corpus;Der Termin des Treffpunkts wird noch abgesprochen;corpus;Der Verbrecher wollte seinem röchelnden Opfer den Hals abdrehen.
+178.wav;dis_239.wav;178;dis_239;GPT-middle;Die Sonne strahlt am wolkenlosen Himmel.;GPT-low;Der Taxifahrer teilte Geschichten von vergessenen Straßen.
+189.wav;dis_134.wav;189;dis_134;GPT-middle;Die Uhr tickt ruhig an der Wand.;GPT-high;Der Koch würzte die Suppe mit frischen Kräutern.
+163.wav;dis_270.wav;163;dis_270;GPT-low;Zwölf Wanderer wollen den Gipfel erklimmen.;GPT-nonfiction;In der Psychologie erforscht man die Grundlagen menschlichen Verhaltens.
+064.wav;dis_202.wav;64;dis_202;corpus;Löst doch die Fahrkarten am Schalter!;GPT-normal;Ein leuchtender Stern führte den Weg durch die Nacht.
+005.wav;dis_199.wav;5;dis_199;GPT-low;Im Wald plätschert eine dunkle Quelle.;GPT-literature;In der Ferne erklangen leise die Klänge eines Geigenkonzerts.
+206.wav;dis_234.wav;206;dis_234;GPT-unprompted;Die Musik erklingt sanft im Raum.;GPT-low;Das Knirschen von Schnee unter meinen Schuhen weckt Erinnerungen.
+213.wav;dis_141.wav;213;dis_141;GPT-low;Der Nachbar sang unter der Dusche Oper.;GPT-high;Die Lehrerin lobte die Schüler für ihre engagierte Mitarbeit.
+217.wav;dis_034.wav;217;dis_034;GPT-normal;Ein bunter Schmetterling tanzt im Sonnenlicht.;GPT-unprompted;Die neugierigen Eichhörnchen huschen durch den herbstlichen Wald.
+013.wav;dis_197.wav;13;dis_197;GPT-low;Durch den Regen leuchtet das Feuer.;GPT-literature;Die Reisenden betraten einen mysteriösen Pfad im Wald.
+093.wav;dis_252.wav;93;dis_252;corpus;Unser Doktor besucht Vater täglich.;GPT-creative;Der Kaffeeduft führt mich durch verschlungene Straßenpfade.
+107.wav;dis_116.wav;107;dis_116;corpus;Unserer Tante fehlt gar nichts.;GPT-low;Die verlorenen Schlüssel fanden sich im Blumentopf wieder.
+078.wav;dis_227.wav;78;dis_227;corpus;Böse Menschen verdienen ihre Strafe.;GPT-low;Im Hinterhof blühen versteckte Blumen in voller Pracht.
+214.wav;dis_080.wav;214;dis_080;GPT-normal;Ein leiser Windhauch streift die Wiesen.;GPT-low;Die Musik belebt den Raum, erzeugt lebendige Schwingungen.
+169.wav;dis_053.wav;169;dis_053;GPT-low;Der alte Baum knarrt bei jedem Windstoß.;GPT-unprompted;In der hellen Küche zaubert die Köchin köstliche Gerichte.
+033.wav;dis_111.wav;33;dis_111;GPT-high;Die Sonne scheint am blauen Himmel.;GPT-high;Ein Windstoß reißt die Blätter vom Schreibtisch.
+183.wav;dis_067.wav;183;dis_067;GPT-middle;Die Treppe führt ins kuschelige Schlafzimmer.;GPT-low;Zwischen den Zeilen verbergen sich die Geheimnisse des Tagebuchs.
+174.wav;dis_265.wav;174;dis_265;GPT-middle;Das Fahrrad rollt leise über Kopfsteinpflaster.;GPT-news;Die Nation trauert um einen verstorbenen prominenten Künstler.
+042.wav;dis_051.wav;42;dis_051;corpus;Am blauen Himmel ziehen die Wolken;GPT-unprompted;Am sonnigen Tag spazieren die Menschen am Flussufer.
+234.wav;dis_035.wav;234;dis_035;GPT-humans;Senioren machen morgendliche Gymnastik im Park.;GPT-unprompted;Auf dem Marktplatz erklingt traditionelle Musik aus der Region.
+147.wav;dis_277.wav;147;dis_277;corpus;Ein primitiver Mensch wird keine Scheu kennen.;GPT-nonfiction;Die Linguistik erforscht die Struktur und Entwicklung von Sprachen.
+006.wav;dis_072.wav;6;dis_072;GPT-low;Wild pfeift der Wind durch die Wände.;GPT-low;Unter dem Schleier des Morgens erwacht die verzauberte Landschaft.
+131.wav;dis_213.wav;131;dis_213;corpus;Fünf Filmtitel müssen wir aufschreiben.;GPT-normal;Das Wetter sieht nach Regen aus, nimm einen Schirm mit.
+036.wav;dis_023.wav;36;dis_023;GPT-low;Die Freunde schauten verwirrt auf ihr Getränk.;corpus;Die Tragödie wurde mit langdauernden Gongschlägen eröffnet.
+187.wav;dis_006.wav;187;dis_006;GPT-middle;Die Wolken malen Geschichten am Himmel.;GPT-low;Der Kaffee dampfte auf dem Tisch während sie nachdachte.
+250.wav;dis_267.wav;250;dis_267;GPT-humans;Die Freunde treffen sich am See.;GPT-news;Ein Skandal um Korruption erschüttert die Regierung.
+114.wav;dis_112.wav;114;dis_112;corpus;Es wird auch da chinesisch gesprochen.;GPT-high;Die Uhren ticken in der Nacht melodisch wie Musik.
+210.wav;dis_031.wav;210;dis_031;GPT-low;Der Regenbogen endete im Blumentopf.;GPT-unprompted;Beim Kochen experimentiere ich gerne mit neuen Rezepten.
+153.wav;dis_241.wav;153;dis_241;GPT-low;Die Melodie klingt nach Sommer.;GPT-creative;Ein sanfter Wind strich durch die grünen Blätter.
+014.wav;dis_050.wav;14;dis_050;GPT-low;Fünf Freunde wollen die Welt bereisen.;GPT-unprompted;Die lebendige Stadtmitte pulsiert vor Energie und Vielfalt.
+243.wav;dis_260.wav;243;dis_260;GPT-humans;Die Bäckerin singt fröhlich beim Brötchenbacken.;GPT-news;Die Bildungsreform stößt auf geteilte Meinungen in der Bevölkerung.
+067.wav;dis_225.wav;67;dis_225;corpus;Leise rollen wir aus dem Bahnhof.;GPT-low;Die alten Straßen der Altstadt erzählen Geschichten.
+110.wav;dis_154.wav;110;dis_154;corpus;Wenn der Schnee schmilzt, kommt der Frühling.;GPT-normal;Der Lehrer erklärt das Thema verständlich im Unterricht.
+108.wav;dis_195.wav;108;dis_195;corpus;Schulkinder müssen Rechnen und Schreiben lernen.;GPT-literature;Zwischen den Zeilen verbarg sich ein verschlüsseltes Geheimnis.
+073.wav;dis_027.wav;73;dis_027;corpus;Es gehört zu einer Feldscheune;GPT-unprompted;Das rauschende Wasser des Flusses beruhigt die Seele.
+195.wav;dis_054.wav;195;dis_054;GPT-middle;Vor dem Fenster summt eine kleine Biene.;GPT-unprompted;Der zuverlässige Bus bringt die Passagiere sicher ans Ziel.
+111.wav;dis_007.wav;111;dis_007;corpus;Englische Kriminalromane sind ihm die liebste Lektüre.;corpus;Weil zwei Parlamentssitze frei werden, ist eine Nachwahl erforderlich.
+022.wav;dis_184.wav;22;dis_184;GPT-daily;Im Park traf ich meinen Deutschlehrer.;GPT-literature;Ein Schauer läuft über den Rücken beim Lesen des Briefes.
+216.wav;dis_222.wav;216;dis_222;GPT-normal;Mein Chef hat eine seltsame Frisur.;GPT-low;Im Café um die Ecke gibt es exotische Teesorten.
+054.wav;dis_237.wav;54;dis_237;corpus;Danach tut eine Wanderung gut.;GPT-low;Der Duft von frisch gepflückten Beeren liegt in der Luft.
+062.wav;dis_179.wav;62;dis_179;corpus;Er gewinnt sechs Spiele nacheinander.;GPT-literature;Die Liebe erblühte wie eine seltene Blume im Winter.
+070.wav;dis_258.wav;70;dis_258;corpus;Ein Bauer arbeitet auf seinem Acker.;GPT-news;Umweltschützer protestieren gegen geplante Rodungen in geschützten Wäldern.
+088.wav;dis_144.wav;88;dis_144;corpus;Sie isst kein salziges Gericht.;GPT-low;Ein ferner Donnerschlag lässt den Boden erzittern.
+047.wav;dis_158.wav;47;dis_158;corpus;Im Geschäft stehen viele Leute;GPT-normal;Das Buch auf dem Tisch wartet auf seine Leserin.
+179.wav;dis_115.wav;179;dis_115;GPT-middle;Der Laptop surft schnell im Internet.;GPT-low;Im verlassenen Dorf hörte man plötzlich fremde Stimmen.
+247.wav;dis_061.wav;247;dis_061;GPT-humans;Der Postbote liest Gedichte beim Zustellen.;GPT-unprompted;Die großzügige Bibliothek lädt zum entspannten Schmökern ein.
+018.wav;dis_186.wav;18;dis_186;GPT-daily;Die Waschmaschine summt sanft im Hintergrund.;GPT-literature;Der Duft von vergilbten Seiten erfüllte die antike Bibliothek.
+122.wav;dis_132.wav;122;dis_132;corpus;Der Löwe schleicht im Käfig umher.;GPT-high;Am Strand rauschten die Wellen sanft ans Ufer.
+154.wav;dis_044.wav;154;dis_044;GPT-low;Vor dem Haus blühen bunte Blumenbeete.;GPT-unprompted;Die antiken Ruinen zeugen von vergangenen Zivilisationen.
+081.wav;dis_117.wav;81;dis_117;corpus;Stehend macht man seine Aussage.;GPT-low;Unter dem Bett entdeckte sie eine vergessene Schatzkarte.
+242.wav;dis_171.wav;242;dis_171;GPT-humans;Die Verkäuferin hat einen ungewöhnlichen Akzent.;GPT-news;Ein internationales Gipfeltreffen soll den Handelsstreit entschärfen.
+134.wav;dis_005.wav;134;dis_005;corpus;Die letztmalige Feststellung war eindrucksvoll.;GPT-low;Die Sterne funkelten am klaren Nachthimmel über der Stadt.
+038.wav;dis_012.wav;38;dis_012;GPT-low;Sein Singen erfüllte den stillen Wald.;corpus;Der herrische Pate versteht sich als Pol der ganzen Familie.
+032.wav;dis_190.wav;32;dis_190;GPT-high;Die Katze schläft auf dem Sofa;GPT-literature;In den Straßen der Großstadt verlor er sich selbst.
+155.wav;dis_103.wav;155;dis_103;GPT-low;In der Bucht glitzern die silbernen Wellen.;GPT-high;Die Roboter tanzen Tango auf dem Dach des Wolkenkratzers.
+077.wav;dis_200.wav;77;dis_200;corpus;Geld allein macht nicht glücklich.;GPT-literature;Das Gemälde spiegelte die Seele des Künstlers wider.
+019.wav;dis_042.wav;19;dis_042;GPT-daily;Auf dem Gehweg quietschen Kinderfahrräder.;GPT-unprompted;Die exotischen Vögel zwitschern fröhlich im üppigen Dschungel.
+098.wav;dis_251.wav;98;dis_251;corpus;Zum Ausweis gehört ein Lichtbild.;GPT-creative;Die Zeit verliert sich zwischen den Seiten eines Buches.
+071.wav;dis_130.wav;71;dis_130;corpus;Der Pflug zieht tiefe Furchen.;GPT-high;Die Blumen blühten prächtig im sonnigen Garten.
+228.wav;dis_057.wav;228;dis_057;GPT-humans;Ein Künstler malt Porträts auf dem Marktplatz.;GPT-unprompted;Die robuste Bauweise des Hauses trotzt den widrigen Wetterbedingungen.
+061.wav;dis_288.wav;61;dis_288;corpus;Vater mischt gleich die Karten.;GPT-daily;Ich höre gerne Musik, während ich den Haushalt mache.
+246.wav;dis_287.wav;246;dis_287;GPT-humans;Der Kellner jongliert mit den Speisekarten.;GPT-daily;Die Hausaufgaben sind erledigt, jetzt ist Freizeit angesagt.
+162.wav;dis_278.wav;162;dis_278;GPT-low;Im Meer tummeln sich faszinierende Lebensformen.;GPT-nonfiction;Die Medizingeschichte beleuchtet Meilensteine in der Heilkunst.
+221.wav;dis_207.wav;221;dis_207;GPT-humans;Ein älteres Paar spaziert Hand in Hand.;GPT-normal;Der Regenschirm schützte vor den ersten Tropfen des Gewitters.
+115.wav;dis_164.wav;115;dis_164;corpus;Vor der Hütte sitzt ein großer Heuhaufen.;GPT-news;Die Aktienmärkte reagieren positiv auf die Wirtschaftsprognose.
+029.wav;dis_030.wav;29;dis_030;GPT-high;Autos fahren auf der Straße.;GPT-unprompted;Der laue Sommerabend lädt zu einem Spaziergang ein.
+170.wav;dis_063.wav;170;dis_063;GPT-low;Der Kaffeeplausch wurde von Ameisen gestört.;GPT-unprompted;Die idyllische Landschaft wirkt beruhigend auf gestresste Gemüter.
+171.wav;dis_138.wav;171;dis_138;GPT-low;Der Fernseher spielt eigenwillige Liebesfilme.;GPT-high;Der Mechaniker reparierte das Auto mit geschickten Handgriffen.
+143.wav;dis_256.wav;143;dis_256;corpus;Beim Studienkurs musst Du ernsthaft lernen.;GPT-creative;Die Stadt atmet im Rhythmus der vorbeiziehenden Wolken.
+049.wav;dis_015.wav;49;dis_015;corpus;Vater will sich eine Pfeife anzünden;corpus;Die Abfangjäger flogen auch an Neujahr über das Dörfchen.
+196.wav;dis_279.wav;196;dis_279;GPT-middle;Im Gebirge glitzern die schneebedeckten Gipfel.;GPT-nonfiction;Die Evolutionstheorie prägt unser Verständnis des Lebens nachhaltig.
+085.wav;dis_071.wav;85;dis_071;corpus;Öfen brauchen Kohlen und Briketts.;GPT-low;In der Stille des Waldes lauscht das Echo des Vergessenen.
+145.wav;dis_049.wav;145;dis_049;corpus;Die Hilfsmannschaft setzt sich in Marsch.;GPT-unprompted;Die freundliche Nachbarschaft trifft sich im kleinen Park.
+236.wav;dis_166.wav;236;dis_166;GPT-humans;In der Galerie bewundern Besucher zeitgenössische Kunst.;GPT-news;Ein Forschungsteam entdeckt einen vielversprechenden Durchbruch in der Medizin.
+255.wav;dis_203.wav;255;dis_203;GPT-unprompted;Auf dem Dach singt fröhlich ein Vogel.;GPT-normal;Der Bibliothekar entdeckte ein vergessenes Buch im Regal.
+009.wav;dis_100.wav;9;dis_100;GPT-low;Flüsternd erzählt der Wind Geschichten.;GPT-high;Die knusprige Pizza duftet verführerisch aus dem Ofen.
+191.wav;dis_087.wav;191;dis_087;GPT-middle;Der Kamin verbreitet wohlige Wärme.;GPT-low;Die Vögel schwirrten um den heruntergefallenen Apfel herum.
+095.wav;dis_147.wav;95;dis_147;corpus;Unsere beiden Hunde haben Durst.;GPT-low;Die Kekse in der Dose knisterten beim Öffnen.
+125.wav;dis_193.wav;125;dis_193;corpus;Im Dschungel herrscht skrupellose Lebensform.;GPT-literature;Der verlassene Leuchtturm zeugte von längst vergangenen Abenteuern.
+222.wav;dis_201.wav;222;dis_201;GPT-humans;Die Freunde teilen Geschichten am Lagerfeuer.;GPT-literature;Ein geheimes Abkommen führte zu einer unerwarteten Allianz.
+141.wav;dis_196.wav;141;dis_196;corpus;Nach einer Umfrage kennt niemand dieses Fremdwort.;GPT-literature;Die Straßenlaternen warfen schummriges Licht auf den Kieselweg.
+259.wav;dis_284.wav;259;dis_284;GPT-sie;Der Nachbar trägt heute einen bunten Anzug.;GPT-nonfiction;Die Geschichte der Medizin offenbart den Fortschritt in Heilungstechniken.
+133.wav;dis_276.wav;133;dis_276;corpus;Achtlos wirft der Knirps Matsch durchs Eckfenster.;GPT-nonfiction;Philosophie reflektiert über grundlegende Fragen menschlichen Denkens.
+197.wav;dis_105.wav;197;dis_105;GPT-unprompted;Der Bus fährt durch die Stadt.;GPT-high;Der Mond spiegelte sich im Fensterglas wider.
+218.wav;dis_271.wav;218;dis_271;GPT-normal;Die Straßenlaternen leuchten im Abendnebel.;GPT-nonfiction;Architektur spiegelt gesellschaftliche Werte und Entwicklungen wider.
+012.wav;dis_189.wav;12;dis_189;GPT-low;Der Fluss plätschert sanft durch das Tal.;GPT-literature;Das Raumschiff schwebte über den unerforschten Planeten.
+238.wav;dis_168.wav;238;dis_168;GPT-humans;Kollegen feiern den Abschluss eines erfolgreichen Projekts.;GPT-news;Ein Naturphänomen sorgt für Aufsehen in der lokalen Gemeinschaft.
+132.wav;dis_078.wav;132;dis_078;corpus;Ängstlich begreifst du Omas Lage.;GPT-low;Die Morgenröte taucht die Stadt in warmes Rosa.
+212.wav;dis_095.wav;212;dis_095;GPT-low;Die Tomate im Kühlschrank keimte.;GPT-high;Die klirrende Kälte lässt die Fensterscheiben gefrieren.
+080.wav;dis_048.wav;80;dis_048;corpus;Nervöse Menschen brauchen viel Ruhe.;GPT-unprompted;In der gemütlichen Bäckerei duftet es nach frischem Brot.
+146.wav;dis_280.wav;146;dis_280;corpus;Am Samstag öffnet der Kiosk erstmals.;GPT-nonfiction;Neuroplastizität zeigt, wie das Gehirn sich ständig verändert.
+158.wav;dis_086.wav;158;dis_086;GPT-low;Das Echo trägt Gedichte fort.;GPT-high;Der Regen durchnässt die bunten Blumen im Garten.
+035.wav;dis_255.wav;35;dis_255;GPT-low;Das Baby lachte über die fliegenden Luftballons.;GPT-creative;Hinter dem Gemälde verbirgt sich ein vergessener Liebesbrief.
+050.wav;dis_156.wav;50;dis_156;corpus;Seine Frau macht ein trauriges Gesicht.;GPT-normal;Die Katze liegt gemütlich auf der Fensterbank und schläft.
+167.wav;dis_268.wav;167;dis_268;GPT-low;Die Tür knarrt laut beim Öffnen.;GPT-news;Der Bürgerentscheid über den neuen Stadtteil steht bevor.
+200.wav;dis_155.wav;200;dis_155;GPT-unprompted;Der Fernseher zeigt die Nachrichten.;GPT-normal;Am Wochenende treffe ich mich mit Freunden im Kino.
+180.wav;dis_081.wav;180;dis_081;GPT-middle;Die Lampe spendet angenehmes, helles Licht.;GPT-low;Fröhliche Gesichter spiegeln Freude in den Schaufensterscheiben.
+105.wav;dis_151.wav;105;dis_151;corpus;Diese zarten Blumen welken rasch.;GPT-normal;Ich trinke meinen Kaffee gerne mit Milch und Zucker.
+010.wav;dis_262.wav;10;dis_262;GPT-low;Seine Worte schwebten wie Schmetterlinge.;GPT-news;Der Bürgermeister kündigt Investitionen in die Infrastruktur an.
+245.wav;dis_036.wav;245;dis_036;GPT-humans;Die Gärtnerin tanzt zwischen den Blumenbeeten.;GPT-unprompted;Die kunstvollen Graffiti zieren die Wände der urbanen Straßen.
+220.wav;dis_233.wav;220;dis_233;GPT-normal;Der Mondschein taucht die Landschaft in Silber.;GPT-low;Zwischen den Blumen des Parks verstecken sich kleine Statuen.
+177.wav;dis_123.wav;177;dis_123;GPT-middle;Das Buch liegt auf dem gemütlichen Sofa.;GPT-low;Die Socke verließ die Schublade auf der Suche nach Abenteuern.
+101.wav;dis_215.wav;101;dis_215;corpus;Adler fliegen tausend Meter hoch.;GPT-normal;In der Stadt herrscht immer viel Trubel und Lärm.
+046.wav;dis_073.wav;46;dis_073;corpus;Messer und Gabel liegen neben dem Teller.;GPT-low;In der Zwielichtzone verschwimmen die Grenzen der Realität.
+230.wav;dis_286.wav;230;dis_286;GPT-humans;Die Familie genießt gemeinsames Abendessen.;GPT-nonfiction;Die Geschichte des Mittelalters wurde oft durch Schlachten geprägt.
+239.wav;dis_040.wav;239;dis_040;GPT-humans;Ein älteres Ehepaar tanzt auf der Hochzeitsfeier.;GPT-unprompted;Der aromatische Duft von exotischen Gewürzen durchzieht die Küche.
+235.wav;dis_041.wav;235;dis_041;GPT-humans;Die Hochzeit versammelt Familie und Freunde.;GPT-unprompted;Auf dem Jahrmarkt sorgen bunte Fahrgeschäfte für Aufregung.
+219.wav;dis_263.wav;219;dis_263;GPT-normal;Ein ruhiger Bach plätschert durch den Wald.;GPT-news;Neue Daten zeigen steigende Arbeitslosenzahlen im Land.
+096.wav;dis_204.wav;96;dis_204;corpus;Jeden Freitag gibt's frischen Fisch.;GPT-normal;Die Straßenlaterne flackerte in der verlassenen Gasse.
+100.wav;dis_029.wav;100;dis_029;corpus;Diese Mannschaft schoss gleich drei Tore.;GPT-unprompted;Auf dem Markt kaufen wir frisches Gemüse und Obst.
+091.wav;dis_162.wav;91;dis_162;corpus;Schnupfen stört uns natürlich sehr.;GPT-normal;Beim Bäcker gibt es köstliche Brötchen zum Frühstück.
+109.wav;dis_097.wav;109;dis_097;corpus;Nicht jeder verträgt kaltes Bier.;GPT-high;Das schmelzende Eis tropft auf den Bürgersteig.
+034.wav;dis_217.wav;34;dis_217;GPT-high;Der Hund bellt vor dem Haus.;GPT-normal;Ein Schatten bewegt sich leise im Treppenhaus.
+058.wav;dis_109.wav;58;dis_109;corpus;Der gelbe Küchenofen sorgt für Wärme;GPT-high;Die Pinguine halten eine Modenschau in der Antarktis.
+076.wav;dis_052.wav;76;dis_052;corpus;Das war jetzt aber ein schöner Tag.;GPT-unprompted;Der herzliche Gruß schafft eine angenehme Atmosphäre.
+011.wav;dis_169.wav;11;dis_169;GPT-low;Das Licht tanzte über dem Fluss.;GPT-news;Die Inflation erreicht den höchsten Stand seit Jahren.
+229.wav;dis_056.wav;229;dis_056;GPT-humans;Studenten treffen sich in der Bibliothek.;GPT-unprompted;Die traditionelle Musik verbreitet gute Laune im Raum.
+097.wav;dis_214.wav;97;dis_214;corpus;Mein Arzt empfahl dringend Bäder.;GPT-normal;Meine Katze schläft liebend gern auf dem Sofa.
+016.wav;dis_208.wav;16;dis_208;GPT-daily;Die Kaffeetasse klirrt beim Frühstück.;GPT-normal;Der Künstler pinselte leidenschaftlich Farben auf die Leinwand.
+102.wav;dis_098.wav;102;dis_098;corpus;Diese Gegend nennt man Sandwüste.;GPT-high;Die quirligen Enten schwimmen im ruhigen Teich.
+168.wav;dis_274.wav;168;dis_274;GPT-low;Vor dem Schloss wartet eine einsame Gestalt.;GPT-nonfiction;Das Weltall birgt zahlreiche unentdeckte Phänomene und Geheimnisse.
+031.wav;dis_133.wav;31;dis_133;GPT-high;Die Vögel zwitschern am Morgen.;GPT-high;Mit dem Wecker begann ein neuer Tag in der Routine.
+166.wav;dis_187.wav;166;dis_187;GPT-low;Der Kühlschrank summt seltsame Melodien.;GPT-literature;Die Uhr im Turm schlug Mitternacht als alles verstummte.
+204.wav;dis_210.wav;204;dis_210;GPT-unprompted;Ein Lächeln erhellt das Gesicht.;GPT-normal;Ich habe gestern einen interessanten Film gesehen.
+211.wav;dis_175.wav;211;dis_175;GPT-low;Der Hund las heimlich die Zeitung.;GPT-literature;Seine Worte waren wie Musik in der stürmischen Nacht.
+226.wav;dis_244.wav;226;dis_244;GPT-humans;Sportliche Jugendliche treffen sich am Fluss.;GPT-creative;Im Café vermischen sich Gespräche zu einem lebendigen Gemälde.
+192.wav;dis_011.wav;192;dis_011;GPT-middle;Zwei Mannschaften kämpfen um den Sieg.;corpus;Ich will keine Zeit durch weitere nutzlose Bemühungen vergeuden.
+028.wav;dis_146.wav;28;dis_146;GPT-high;Der Kaffee duftet sehr verlockend.;GPT-low;Das Gemälde an der Wand zeigte bewegte Landschaften.
+083.wav;dis_209.wav;83;dis_209;corpus;Manche Menschen vertragen keine Erdbeeren.;GPT-normal;Ich trinke gerne einen Kaffee am Morgen und lese Zeitung.
+041.wav;dis_137.wav;41;dis_137;GPT-low;Sein Blick fiel auf den Boden.;GPT-high;Der Wanderer genoss die Aussicht vom Berggipfel.
+099.wav;dis_167.wav;99;dis_167;corpus;Unsere Söhne lieben flotte Tänze.;GPT-low;Das Klappern der Tastatur hallt durch den Park.
+021.wav;dis_269.wav;21;dis_269;GPT-daily;Der Wecker klingelt zur gewohnten Zeit.;GPT-nonfiction;Die Evolution formte die Vielfalt des Tierreichs entscheidend.
+106.wav;dis_017.wav;106;dis_017;corpus;Danach kannst Du Dich wirklich richten.;corpus;Der Karlspreis ist die Sternstunde eines Films.
+181.wav;dis_245.wav;181;dis_245;GPT-middle;Die Katze schnurrt zufrieden auf dem Sofa.;GPT-creative;Der Spiegel reflektiert Träume, die noch nicht geträumt wurden.
+087.wav;dis_224.wav;87;dis_224;corpus;Schlaf vor Mitternacht ist gesund.;GPT-low;Beim Kochen improvisiere ich gerne mit Gewürzen.
+205.wav;dis_145.wav;205;dis_145;GPT-unprompted;Die Sterne funkeln am Nachthimmel.;GPT-low;Beim Kochen fiel mir ein Gedicht über Kartoffeln ein.
+190.wav;dis_182.wav;190;dis_182;GPT-middle;Der Apfelbaum trägt viele reife Äpfel.;GPT-literature;Die Wüste erstreckte sich endlos bis zum Horizont.
+248.wav;dis_243.wav;248;dis_243;GPT-humans;In der Wüste flirrt die Hitze.;GPT-creative;Ein geheimnisvolles Tagebuch liegt offen im verstaubten Bücherregal.
+232.wav;dis_177.wav;232;dis_177;GPT-humans;Eine Gruppe Freunde lacht in der Bar.;GPT-literature;Das geheimnisvolle Buch entfesselte die Kraft der Magie.
+160.wav;dis_026.wav;160;dis_026;GPT-low;Im Alltag herrscht eine gnadenlose Hektik.;GPT-unprompted;Am Wochenende besuchen wir oft unsere Großeltern.
+254.wav;dis_235.wav;254;dis_235;GPT-unprompted;Die weiße Leinwand wird vom Maler beschriftet.;GPT-low;Im alten Buchladen fand ich eine vergessene Sammlung von Gedichten.
+193.wav;dis_088.wav;193;dis_088;GPT-middle;Der Zug rattert laut durch die Nacht.;GPT-high;Im Wald singen die Vögel fröhlich ihr Lied.
+244.wav;dis_188.wav;244;dis_188;GPT-humans;Der Polizist spielt Gitarre für die Nachbarschaft.;GPT-literature;Der Detektiv löste das Rätsel um das gestohlene Gemälde.
+176.wav;dis_089.wav;176;dis_089;GPT-middle;Der Kaffee duftet verführerisch am Morgen.;GPT-high;Ein ungewöhnliches Geräusch ließ sie innehalten und lauschen.
+139.wav;dis_219.wav;139;dis_219;corpus;Die Bremse quietscht beim linkslastigen Bremsen.;GPT-normal;Das neue Restaurant hat eine interessante Speisekarte.
+008.wav;dis_060.wav;8;dis_060;GPT-low;Morgen umarmt der Nebel die Berge.;GPT-unprompted;Die geheimnisvolle Atmosphäre der Gasse weckt die Neugierde.
+104.wav;dis_140.wav;104;dis_140;corpus;Einige Busse fahren heute später.;GPT-high;Der Gärtner pflanzte bunte Blumen in die Beete.
+056.wav;dis_159.wav;56;dis_159;corpus;Wir hören den plätschernden Bach;GPT-normal;Der Regen klopft leise an das Fenster.
+138.wav;dis_283.wav;138;dis_283;corpus;Nicht alle Menschen verkraften den Linksverkehr sofort.;GPT-nonfiction;Ein Blick in die Astronomie enthüllt die Geheimnisse des Universums.
+149.wav;dis_022.wav;149;dis_022;corpus;Der Frosch sprang rein ins Täschchen.;corpus;Der Vertragsabschluss sah eine vieljährige Laufzeit vor.
+175.wav;dis_228.wav;175;dis_228;GPT-middle;Die Blumen blühen im sonnigen Garten.;GPT-low;Beim Morgenspaziergang fand ich eine verlorene Schatzkarte.
+136.wav;dis_046.wav;136;dis_046;corpus;Für Volkskunst schwärmt nicht jede Altersstufe.;GPT-unprompted;Das historische Fachwerkhaus strahlt einen nostalgischen Charme aus.
+144.wav;dis_058.wav;144;dis_058;corpus;Prinzipiell müssen alle Hunde ein Halsband tragen.;GPT-unprompted;Ein harmonischer Klangteppich umhüllt die Zuhörer im Konzertsaal.
+161.wav;dis_001.wav;161;dis_001;GPT-low;Durch die Straßen zieht eine kalte Brise.;corpus;Das Haus neben dem Leuchtturm dient seit Jahren als Unterschlupf.
+137.wav;dis_242.wav;137;dis_242;corpus;Der Besitz des Kiosks ist rechtlich verpfändet.;GPT-creative;Ein verlorener Schlüssel öffnet Türen zu unbekannten Welten.
+173.wav;dis_173.wav;173;dis_173;GPT-middle;Die Straßenlaterne spendet warmes Licht.;GPT-literature;Ihre Augen spiegelten die Abgründe der vergangenen Jahre.
+172.wav;dis_114.wav;172;dis_114;GPT-low;Nach dem Aufräumen fand ich mein Buch.;GPT-low;Der alte Schrank versteckte ein geheimnisvolles Tagebuch.
+233.wav;dis_170.wav;233;dis_170;GPT-humans;Die Nachbarn feiern gemeinsam im Garten.;GPT-news;Die Wirtschaftsdaten deuten auf ein langsames Wachstum hin.
+258.wav;dis_045.wav;258;dis_045;GPT-sie;Sie hört Musik mit geschlossenen Augen.;GPT-unprompted;Der tanzende Schmetterling verzaubert mit seinen bunten Flügeln.
+186.wav;dis_033.wav;186;dis_033;GPT-middle;Die Kaffeetasse dampft auf dem Frühstückstisch.;GPT-unprompted;Die klirrende Kälte lässt die Seen im Winter zufrieren.
+215.wav;dis_122.wav;215;dis_122;GPT-normal;Ein freundliches Lächeln erhellt den Tag.;GPT-low;Die Bibliothekarin verschluckte versehentlich einen Buchstaben. 
+048.wav;dis_289.wav;48;dis_289;corpus;Gleich hier sind die Nahrungsmittel;GPT-daily;Die Verkehrslage ist heute morgen ziemlich entspannt.
+026.wav;dis_143.wav;26;dis_143;GPT-high;Das Wasser kocht auf dem Herd.;GPT-low;Während des Telefonats hörte sie das Meer rauschen.
+231.wav;dis_084.wav;231;dis_084;GPT-humans;Ein Paar tanzt unter dem Sternenhimmel.;GPT-low;Ein warmes Lächeln zaubert Sonnenschein in graue Tage.
+063.wav;dis_282.wav;63;dis_282;corpus;Der Bahnhof liegt sieben Minuten entfernt.;GPT-nonfiction;Die Entschlüsselung des menschlichen Genoms wirft ethische Fragen auf.
+201.wav;dis_104.wav;201;dis_104;GPT-unprompted;Der Briefträger bringt die Post.;GPT-high;Der Seiltänzer backt Kekse in der Hängematte.
+152.wav;dis_059.wav;152;dis_059;corpus;Nach diesen Sturmböen herrscht ein furchtbares Chaos.;GPT-unprompted;Die eifrigen Bienenschwärme bestäuben emsig die duftenden Blüten.
+256.wav;dis_161.wav;256;dis_161;GPT-sie;Sie liest ein Buch in der Sonne.;GPT-normal;Der Briefträger bringt täglich die Post vorbei.
+129.wav;dis_183.wav;129;dis_183;corpus;Du bewirbst dich bei der gepflegten Wirtschaftsbank.;GPT-literature;Ein Flüstern durchzog den verwunschenen Wald im Mondschein.
+045.wav;dis_157.wav;45;dis_157;corpus;Der Kaffee dampft in den Tassen.;GPT-normal;In der Stadt herrscht reges Treiben am Samstag.
+227.wav;dis_221.wav;227;dis_221;GPT-humans;Das Café ist Treffpunkt für Gespräche.;GPT-low;Auf dem Flohmarkt entdeckte ich einen antiken Spiegel.
+194.wav;dis_043.wav;194;dis_043;GPT-middle;Der Raureif zaubert Diamanten auf Blätter.;GPT-unprompted;Der prächtige Regenbogen erstrahlt nach dem heftigen Gewitter.
+074.wav;dis_074.wav;74;dis_074;corpus;Alle eilen gleich links ins Freie.;GPT-low;Über den Dächern der Stadt verliert sich der Horizont.
+123.wav;dis_240.wav;123;dis_240;corpus;Auch der Elefant ist ein Geschöpf Gottes.;GPT-low;In der alten Buchhandlung fand ich ein Buch ohne Titel.
+103.wav;dis_016.wav;103;dis_016;corpus;Verkehrsampeln leuchten grün, gelb, rot.;corpus;Der Kursteilnehmer wählt das einfachste Exemplar der vergilbten Schriftstücke.
