@@ -13,7 +13,7 @@ library(Hmisc)
 
 setwd("/data/pt_03114/trf_analysis_yo/code_upload/statistics/")
 #Load fits
-fits_sub_ac <- fread("./fits_ac_within_50.csv")
+fits_sub_ac <- fread("./fits_ac_within.csv")
 
 
 
@@ -23,7 +23,7 @@ fits_sub_ac <- fits_sub_ac %>%
   rename(feat = feature_shuffle)
 
 
-fits_sub <- fread("./fits_ling_within_50.csv")
+fits_sub <- fread("./fits_ling_within.csv")
 
 fits_sub <- fits_sub %>%
   select(-V1) %>%
@@ -181,6 +181,7 @@ data_sub <- data_model %>%
 
 mean(data_sub$threshold)
 
+
 corm <- data_sub %>%
   ungroup() %>%
   dplyr::select("age", 
@@ -267,7 +268,6 @@ for (f in feats){
 
 t2 <- lm(sub_acc~age*word_target*onsets_dis +age*word_target*ac_dis+meana+ptaresid+srt_db, 
          data = data_sub)
-summary(t2)
 
 tab_model(t2, p.adjust ="fdr")
 
@@ -279,13 +279,14 @@ plot_model(t2, type = "eff",  terms = c( 'word_target', 'onsets_dis'), color = g
   theme(axis.title = element_text(size = 30), 
         text = element_text(size = 25)) + 
   ggtitle("") + 
-  ylab("Mean Accuracy") + 
-  xlab("Linguistic Word Target") + 
+  ylab("Mean\nAccuracy") + 
+  xlab("Linguistic\nWord Target") + 
   guides(fill=guide_legend(title="Onsets\nDistractor")) + 
   guides(color=guide_legend(title="Onsets\nDistractor"))
 
 #ggsave("../figures/compfig.png", dpi=700)
-
+sname = sprintf("../../../figures/compfig.png")
+ggsave(sname, width = 5.5, height =4.85, unit = "in", dpi = 700)
 
 
 
