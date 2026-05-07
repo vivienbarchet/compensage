@@ -88,12 +88,10 @@ print("Analysis starts with " + str(len(strain)), flush = True)
 
 trf = TRF(metric=pearsonr)
 
-regularization = [pow(10, x) for x in range(-10,4)]
+regularization = 0.1
 #train regularization
-reg = trf.train(strain, rtrain, 128, tmin, tmax, regularization,k=10, verbose = True)
-
-print(trf.regularization)
-r_crossval_target = predict_time_constrained_trial(trf,strain,rtrain,average=False, onsetVecDim = 1, onsetVecWinSt = 50, onsetVecWinEnd =800)
+reg = trf.train(strain, rtrain, 128, tmin, tmax, regularization)
+r_crossval_target = predict_time_constrained_trial(trf,strain,rtrain,average=False)
 
 
 mod_weights = trf

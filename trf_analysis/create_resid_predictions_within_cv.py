@@ -118,10 +118,10 @@ for i in range(len(splits)):
 
 
     regularization = 0.1
-    reg = trf.train(strain, rtrain, 128, tmin, tmax, regularization,k=10, verbose = True)
+    reg = trf.train(strain, rtrain, 128, tmin, tmax, regularization)
     print(regularization)
 
-    r_crossval_target = predict_time_constrained_trial(trf,stest,rtest,average=False, onsetVecDim = 1, onsetVecWinSt = 50, onsetVecWinEnd =800)
+    r_crossval_target = predict_time_constrained_trial(trf,stest,rtest,average=False)
 
 
     mod_weights = trf
