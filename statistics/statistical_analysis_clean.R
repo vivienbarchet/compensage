@@ -223,7 +223,8 @@ data_sub <- data_sub %>%
     word_target_tr = scale(word_target_tr), 
     sub_acc = scale(sub_acc), 
     ptaresid = scale(ptaresid), 
-    acc_diff = scale(acc_diff)
+    acc_diff = scale(acc_diff), 
+    srt_db = scale(srt_db)
   )
 
 
@@ -386,6 +387,10 @@ data_model <- data_model %>%
   merge(data_sub[c('subject', 'ptaresid')], by = "subject")
 
 
+data_model <- data_model %>%
+  mutate(wordlen = scale(wordlen), 
+         sentence_len = scale(sentence_len)
+  )
 
 
 eeg_mod_wd <- glmer(acc ~ audibility*age + age*surprisal+
