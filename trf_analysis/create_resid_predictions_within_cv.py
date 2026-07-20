@@ -35,7 +35,7 @@ with open("../trf_input/channels.pickle", "rb") as input_file:
 import itertools
 import copy
 
-featn = "ac_control"
+featn = "acoustic"
 
 tmin = -0.1
 tmax = 0.8
@@ -127,14 +127,14 @@ for i in range(len(splits)):
     mod_weights = trf
     pred_leftout.extend(r_crossval_target[3])
 
-mod_name = "acoustic_8020_speaker"
+mod_name = "acoustic"
 newpath = "../trf_results/" + "within" + "/" +"pred_resid" + "/"
 
 if not os.path.exists(newpath):
     os.makedirs(newpath)
 
 
-trfs_name = "resp_resid_{m}_{s}_cv_nb_indreg.pickle".format(m = mod_name, s = sub)
+trfs_name = "resp_resid_{m}_{s}_cv_nb.pickle".format(m = mod_name, s = sub)
 trfp = newpath + trfs_name
 with open(trfp, "wb") as output_file:
     pickle.dump(pred_leftout, output_file)

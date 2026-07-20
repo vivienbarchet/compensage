@@ -36,7 +36,7 @@ with open("../trf_input/channels.pickle", "rb") as input_file:
 import itertools
 import copy
 
-featn = "ac_control"
+featn = "acoustic"
 
 tmin = -0.1
 tmax = 0.8
@@ -97,7 +97,7 @@ r_crossval_target = predict_time_constrained_trial(trf,strain,rtrain,average=Fal
 mod_weights = trf
 pred_leftout = r_crossval_target[3]
 
-mod_name = "acoustic_8020_speaker"
+mod_name = "acoustic"
 newpath = "../trf_results/" + "within" + "/" +"pred_resid" + "/"
 
 if not os.path.exists(newpath):

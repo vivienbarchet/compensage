@@ -66,7 +66,7 @@ for ise, seed in enumerate(seedlist):
     ###Load residualized eeg
 
 
-    path_in = "../trf_results/within/pred_resid/resp_resid_acoustic_8020_speaker_{s}.pickle".format(s =sub)
+    path_in = "../trf_results/within/pred_resid/resp_resid_acoustic_{s}.pickle".format(s =sub)
     with open(path_in, "rb") as input_file:
         resp_sub = pickle.load(input_file)
 
