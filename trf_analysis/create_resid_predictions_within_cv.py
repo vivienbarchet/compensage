@@ -35,7 +35,7 @@ with open("../trf_input/channels.pickle", "rb") as input_file:
 import itertools
 import copy
 
-featn = "acoustic"
+featn = "ac"
 
 tmin = -0.1
 tmax = 0.8
