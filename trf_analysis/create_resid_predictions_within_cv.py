@@ -117,7 +117,8 @@ for i in range(len(splits)):
     stest = [feat_sub[i] for i in testind]
 
 
-    regularization = 0.1
+    regularization = 0.046415888336127725
+
     reg = trf.train(strain, rtrain, 128, tmin, tmax, regularization)
     print(regularization)
 

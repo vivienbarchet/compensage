@@ -88,9 +88,9 @@ print("Analysis starts with " + str(len(strain)), flush = True)
 
 trf = TRF(metric=pearsonr)
 
-regularization = 0.1
+reg = 0.046415888336127725
 #train regularization
-reg = trf.train(strain, rtrain, 128, tmin, tmax, regularization)
+reg = trf.train(strain, rtrain, 128, tmin, tmax, reg)
 r_crossval_target = predict_time_constrained_trial(trf,strain,rtrain,average=False)
 
 

@@ -11,9 +11,9 @@ library(tidyverse)
 library("readxl")
 library(Hmisc) 
 
-
+setwd("/data/pt_03114/trf_analysis_yo/code_upload/statistics/")
 #Load fits
-fits_sub_ac <- fread("fits_ac_within_599.csv")
+fits_sub_ac <- fread("fits_ac_within.csv")
 
 
 
@@ -23,7 +23,7 @@ fits_sub_ac <- fits_sub_ac %>%
   rename(feat = feature_shuffle)
 
 
-fits_sub <- fread("fits_ling_within_599.csv")
+fits_sub <- fread("fits_ling_within.csv")
 
 fits_sub <- fits_sub %>%
   select(-V1) %>%
@@ -34,7 +34,7 @@ fits_sub <- fits_sub %>%
 fits_sub <- rbind(fits_sub_ac, fits_sub)
 
 
-fits_sub_tr <- fread("tr_fits_ling_599.csv")
+fits_sub_tr <- fread("tr_fits_ling.csv")
 
 fits_sub_tr <- fits_sub_tr %>%
   select(-V1) %>%
@@ -115,17 +115,7 @@ data_model <- left_join(data_model, baseline, by = "subject")
 
 data_model <- data_model %>%
   mutate(meana = scale(meana), 
-         srt_db = scale(srt_db)) %>%
-  mutate(
-    onsets_target=scale(onsets_target),
-    onsets_dis = scale(onsets_dis), 
-    ac_target = scale(ac_target), 
-    ac_dis = scale(ac_dis), 
-    word_target = scale(ling_word_target), 
-    # phoneme_target= scale(ling_phone_target),
-    word_target_tr = scale(ling_word_target_tr)
-  ) %>%
-  ungroup() 
+         srt_db = scale(srt_db))
 
 
 #Load demographics
@@ -168,9 +158,8 @@ data_sub <- data_model %>%
                    onsets_dis = mean(onsets_dis), 
                    ac_target = mean(ac_target), 
                    ac_dis = mean(ac_dis), 
-                   word_target = mean(word_target), 
-                   # phoneme_target= mean(phoneme_target), 
-                   word_target_tr = mean(word_target_tr)
+                   word_target = mean(ling_word_target), 
+                   word_target_tr = mean(ling_word_target_tr)
   )%>%
   mutate(acc_diff = (sub_acc - mean_acc_wl)/(sub_acc+mean_acc_wl))
 
@@ -219,7 +208,6 @@ data_sub <- data_sub %>%
     ac_target = scale(ac_target), 
     ac_dis = scale(ac_dis), 
     word_target = scale(word_target), 
-    # phoneme_target= scale(phoneme_target), 
     word_target_tr = scale(word_target_tr), 
     sub_acc = scale(sub_acc), 
     ptaresid = scale(ptaresid), 
@@ -322,7 +310,9 @@ for (f in feats){
 }
 
 
-
+t2 <- lm(word_target~age+sub_acc+meana+ptaresid+srt_db, 
+         data = data_sub)
+summary(t2)
 ###Compensation analysis----
 
 
@@ -383,18 +373,31 @@ modest = modest[,c(1,2,5,3,4)]
 data_model <- data_model %>%
   mutate(wordlen = str_length(word))
 
-data_model <- data_model %>%
+trialfull <- data_model %>%
   merge(data_sub[c('subject', 'ptaresid')], by = "subject")
 
 
-data_model <- data_model %>%
-  mutate(wordlen = scale(wordlen), 
+
+trialfull <- trialfull %>%
+  mutate(meana = scale(meana), 
+         age = scale(Age)) %>%
+  group_by(subject) %>%
+  mutate(
+    onsets_target=scale(onsets_target),
+    onsets_dis = scale(onsets_dis), 
+    ac_target = scale(ac_target), 
+    ac_dis = scale(ac_dis), 
+    word_target = scale(ling_word_target), 
+  ) %>%
+  ungroup() %>%
+  mutate(srt_db = scale(srt_db), 
+         wordlen = scale(wordlen), 
          sentence_len = scale(sentence_len)
-  )
+         )
 
-
-eeg_mod_wd <- glmer(acc ~ audibility*age + age*surprisal+
+eeg_mod <- glmer(acc ~ audibility*age + age*surprisal+
                       audibility*surprisal+
+                      trialnum + 
                       wordlen+
                       entropy*age+
                       db_cond+word_order+
@@ -402,23 +405,22 @@ eeg_mod_wd <- glmer(acc ~ audibility*age + age*surprisal+
                       age*ac_target + age*ac_dis + 
                       age*onsets_target+ age*onsets_dis + 
                       age*word_target + 
-                      # age*phoneme_target+
-                      
+
                       (1|subject) + (1|target), 
-                    data = data_model,
+                    data = trialfull,
                     family = "binomial", control=glmerControl(optimizer="bobyqa",
                                                               optCtrl=list(maxfun=2e5)))
-summary(eeg_mod_wd) 
+summary(eeg_mod) 
 
 
-tab_model(eeg_mod_wd, p.adjust = "fdr" )
+tab_model(eeg_mod, p.adjust = "fdr" )
 
 library(DHARMa)
-simulationOutput <- simulateResiduals(fittedModel = eeg_mod_wd, plot = T)
+simulationOutput <- simulateResiduals(fittedModel = eeg_mod, plot = T)
 
 greens <- RColorBrewer::brewer.pal(4, "Greens")[2:5]
 
-plot_model(eeg_mod_wd, type = "pred",  terms = c('audibility', 'surprisal'), 
+plot_model(eeg_mod, type = "pred",  terms = c('audibility', 'surprisal'), 
            color = greens, 
            line.size = 2) + 
   theme_classic() + 
@@ -448,7 +450,7 @@ plot_model(eeg_mod, type = "pred",  terms = c('entropy', 'age[-1.09, -0.22, 1.24
 
 
 
-plot_model(eeg_mod_wd, type = "pred",  terms = c('onsets_dis', 'age[-1.09, -0.22, 1.24]'), color = c("#98accf", "#5579aa", "#3f4756"), 
+plot_model(eeg_mod, type = "pred",  terms = c('onsets_dis', 'age[-1.09, -0.22, 1.24]'), color = c("#98accf", "#5579aa", "#3f4756"), 
            line.size = 2) + 
   theme_classic() + 
   theme(axis.title = element_text(size = 30), 
@@ -465,7 +467,7 @@ plot_model(eeg_mod_wd, type = "pred",  terms = c('onsets_dis', 'age[-1.09, -0.22
 
 
 library(interactions)
-sim_slopes(eeg_mod_wd, pred = onsets_dis, modx =age, johnson_neyman = TRUE, 
+sim_slopes(eeg_mod, pred = onsets_dis, modx =age, johnson_neyman = TRUE, 
            modx.values = c(-1.09, -0.22, 1.24), jnplot = TRUE)
 
 
@@ -473,15 +475,15 @@ sim_slopes(eeg_mod_wd, pred = onsets_dis, modx =age, johnson_neyman = TRUE,
 
 
 library(car)
-vif(eeg_mod_wd)
-range(vif(eeg_mod_wd))
+vif(eeg_mod)
+range(vif(eeg_mod))
 
 
 
 #Save model outputs
-summary(eeg_mod_wd)$coefficients
-cc<-confint(eeg_mod_wd,parm="beta_",method="Wald")
-ctab <- cbind(summary(eeg_mod_wd)$coefficients,cc)
+summary(eeg_mod)$coefficients
+cc<-confint(eeg_mod,parm="beta_",method="Wald")
+ctab <- cbind(summary(eeg_mod)$coefficients,cc)
 
 modest = data.frame(ctab)
 modest = modest[,c(1,2,5,6,3,4)]

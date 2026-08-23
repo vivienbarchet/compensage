@@ -132,7 +132,7 @@ for nb in range(5):
 
         trf = TRF(metric=pearsonr)
         #TRain model
-        reg = 0.1
+        reg = 0.046415888336127725
 
         reg1 = trf.train(strain, rtrain, 128, tmin, tmax, reg, verbose = False)
         mod_weights.append(trf)

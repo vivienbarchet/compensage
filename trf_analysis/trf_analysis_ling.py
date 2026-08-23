@@ -128,7 +128,7 @@ for nb in range(5):
 
         trf = TRF(metric=pearsonr)
         #TRain model
-        reg = 1e-07
+        reg = 1e-08
         trf = train_only_banded(trf, strain, rtrain, 128, tmin, tmax,reg)
         mod_weights.append(trf)
         #Test model

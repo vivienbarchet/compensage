@@ -157,7 +157,7 @@ def cv_run_ling(feat_sub, resp_stan, sub, mod, feat_shuffle, nfolds = 10, tr = F
 
  
 
-            reg = 1e-07
+            reg = 1e-08
             trf = trf.train(strain, rtrain, 128, tmin, tmax, reg)
             mod_weights.append(trf)
         
@@ -326,7 +326,7 @@ def cv_run(feat_sub, resp_stan, sub, mod, feat_shuffle, nfolds = 10, tr = False)
             trf = TRF(metric=pearsonr)
 
 
-            reg = 0.1
+            reg = 0.046415888336127725
 
             trf = trf.train(strain, rtrain, 128, tmin, tmax, reg)
             mod_weights.append(trf)
